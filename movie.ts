@@ -1,4 +1,4 @@
-
+import { Professional } from "./professional";
 
 export class Movie {
   //Atributos
