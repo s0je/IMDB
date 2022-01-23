@@ -1,4 +1,6 @@
-export class movie {
+
+
+export class Movie {
   //Atributos
  public title: string;
  public releaseYear: number;
