@@ -1,4 +1,4 @@
-
+import { Professional } from "./professional";
 
 export class Movie {
   //Atributos
@@ -39,18 +39,18 @@ export class Movie {
   }
   printAll(){
       console.log(`Título: ${this.title}
-      Año de lanzamiento: ${this.releaseYear}
-      Actores: ${this.getStringActors()}
-      País: ${this.nationality}
-      Director: ${this.director.name}
-      Guionista: ${this.writer.name}
-      Idioma: ${this.language}
-      Plataforma: ${this.platform}
-      Universo Marvel: ${this.isMCU}
-      Protagonista: ${this.mainCharacterName}
-      Productor: ${this.producer.name}
-      Distribuidora: ${this.distributor}
-      Género: ${this.genre}`)
+Año de lanzamiento: ${this.releaseYear}
+Actores: ${this.getStringActors()}
+País: ${this.nationality}
+Director: ${this.director.name}
+Guionista: ${this.writer.name}
+Idioma: ${this.language}
+Plataforma: ${this.platform}
+Universo Marvel: ${this.isMCU}
+Protagonista: ${this.mainCharacterName}
+Productor: ${this.producer.name}
+Distribuidora: ${this.distributor}
+Género: ${this.genre}`)
   }
 
 }
