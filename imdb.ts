@@ -12,4 +12,11 @@ export class IMDB
     {
         this.peliculas = peliculas;
     }
+
+    // Metodos
+
+    public escribirEnFicheroJSON(nombre:string)
+    {
+        const fs = require("fs"); 
+    }
 }

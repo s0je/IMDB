@@ -31,3 +31,7 @@ esdla.producer = DiCaprio
 esdla.distributor = 'Warner Bros'
 
 let peliculas = new IMDB ([esdla,DJango]);
+
+const fs = require("fs"); 
+
+fs.writeFileSync('imdbBBDD.json', JSON.stringify(peliculas));
