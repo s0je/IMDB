@@ -23,10 +23,15 @@ export class IMDB
         fs.writeFileSync(nombre,JSON.stringify(this.peliculas));
     }
 
-    // public obtenerinstaciaIMDB(nombreFichero:string):IMDB
-    // {
+    public obtenerinstaciaIMDB(nombreFichero:string):IMDB
+    {
+        const fs = require("fs");
+        let temp = fs.readFileSync(nombreFichero, 'utf-8');
+        let imdbDDBB: IMDB = JSON.parse(temp);
 
-    // }
+        return imdbDDBB;
+        
+    }
 }
 
         // let movieTemp: Movie;
