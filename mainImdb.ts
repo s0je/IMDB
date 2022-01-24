@@ -1,3 +1,4 @@
+import { readFileSync } from "fs";
 import { IMDB } from "./imdb";
 import {Movie} from "./movie";
 import { Professional } from "./professional";
@@ -35,3 +36,6 @@ let peliculas = new IMDB ([esdla,DJango]);
 const fs = require("fs"); 
 
 fs.writeFileSync('imdbBBDD.json', JSON.stringify(peliculas));
+
+let tempBBDD = readFileSync('imdbBBDD.json', 'utf-8');
+let imdbBBDD = JSON.parse(tempBBDD);
