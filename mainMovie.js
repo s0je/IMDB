@@ -1,7 +1,9 @@
-import { Professional } from "./professional";
-import { Movie } from "./movie";
+"use strict";
+exports.__esModule = true;
+var professional_1 = require("./professional");
+var movie_1 = require("./movie");
 //Reparto
-let DiCaprio = new Professional(
+var DiCaprio = new professional_1.Professional(
   "Leonar Dicaprio",
   47,
   "Masculino",
@@ -14,7 +16,7 @@ let DiCaprio = new Professional(
   7,
   "Actor"
 );
-let Denzel = new Professional(
+var Denzel = new professional_1.Professional(
   "Denzel Washington",
   67,
   "Masculino",
@@ -27,7 +29,7 @@ let Denzel = new Professional(
   2,
   "Actor"
 );
-let Almodovar = new Professional(
+var Almodovar = new professional_1.Professional(
   "Pedro Almodovar",
   72,
   "Masculino",
@@ -41,7 +43,12 @@ let Almodovar = new Professional(
   "Director"
 );
 //Pelicula
-let esdla = new Movie("El señor de los anillos", 2003, "USA", "Fantasía épica");
+var esdla = new movie_1.Movie(
+  "El señor de los anillos",
+  2003,
+  "USA",
+  "Fantasía épica"
+);
 esdla.actors = [DiCaprio, Denzel, Almodovar];
 esdla.director = Almodovar;
 esdla.writer = Almodovar;
@@ -51,5 +58,4 @@ esdla.isMCU = true;
 esdla.mainCharacterName = "Gandalf";
 esdla.producer = DiCaprio;
 esdla.distributor = "Warner Bros";
-
 esdla.printAll();
